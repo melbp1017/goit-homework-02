@@ -18,7 +18,10 @@ body{
 /*Studio Formatting*/
 
 /* Header Styles*/
-
+.top-line{
+    border-bottom: 1px solid var(--cornflower);
+    background: white;
+}
 .header-logo {
     color:var(--navy-blue);
     text-decoration: none;
@@ -80,12 +83,12 @@ body{
     color: white;
     border: none;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 .button:hover {
-    background-color: var(--ocean);
     color: white;
+    background-color: var(--ocean);
+    box-shadow: 0px 4px 4px 0px;
 }
 
 /*section one*/
@@ -108,6 +111,7 @@ body{
     font-size: 16px;
     line-height: 1.5px; 
     letter-spacing: 0.32px;}
+
 /*section-two*/
 .section-two-info, .section-three-info{
     text-align:center;
@@ -124,7 +128,11 @@ body{
     padding: 0px;
     list-style: none;
 }
+
 /*section three*/
+.section-three{
+background: var(--cloud);  
+}
 .section-three-list-item-name{
     color:var(--navy-blue);
     font-size: 20px;
@@ -139,6 +147,7 @@ body{
     line-height: 1.5em;
     letter-spacing: 0.32px;
 }
+
 /*footer*/
 .footer{
     background-color: var(--navy-blue);
@@ -163,9 +172,43 @@ body{
 
 /*end of Studio Formatting*/
 
-/*portfolio Formatting*/
-.filter-list{
+/*Portfolio Formatting*/
+.filter-list, .project-cards{
     margin: 0px;
     padding: 0px;
     list-style: none;
+  
 }
+.btn-filter {
+    font-size: 16px;
+    font-family: inherit;
+    background-color: var(--cloud);
+    text-align: center;
+    color: var(--iris);
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower);
+    cursor: pointer;
+}
+.btn-filter:hover {
+    background: var(--ocean);
+    box-shadow: 0px 2px 2px 0px;
+    color: white;
+}
+
+.project-cards-list{
+    color: var(--navy-blue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+}
+.project-cards-category{
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+}
+/*end of portfolio formatting*/
